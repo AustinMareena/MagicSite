@@ -20,11 +20,38 @@ a {
 .top-navbar {
     height: 52px;
     width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 1px gray;
 }
 
 .top-navbar-bio {
     color: white;
     opacity: 0.4;
+    letter-spacing: 0.75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.top-navbar-link {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding-right: 20px;
+}
+
+.nav-image-bag {
+    max-height: 20px;
 }
 
 .navbar {
@@ -70,33 +97,13 @@ a {
     color: white;
 }
 
-
 .logo {
     height: 40px;
     padding-right: 2.5rem;
 }
 
-.nav-image-bag {
-    max-height: 20px;
-    width: auto;
-}
-
 .mobile-search {
     display: none;
-}
-
-.nav-image-search {
-    max-height: 40px;
-    width: auto;
-    padding-top: 3px;
-    padding-right: 2.5rem;
-}
-
-.nav-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2.5rem;
 }
 
 .hero-container {
@@ -112,6 +119,10 @@ a {
     .navbar {
         justify-content: space-between;
         background-color: #142B3D;
+    }
+
+    .top-navbar {
+        display: none;
     }
 
     .nav-menu {
