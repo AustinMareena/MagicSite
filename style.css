@@ -22,7 +22,6 @@ a {
     justify-content: center;
     align-items: center;
     padding: 1rem 0.5rem;
-    background-color: #142B3D;
     height: 48px;
 }
 
@@ -91,7 +90,7 @@ a {
 }
 
 .hero-container {
-    height: 600px;
+    height: 800px;
     width: 100%;
     background-image: url(Images/hero-image.png);
     background-size: 100%;
