@@ -17,6 +17,14 @@ a {
     text-decoration: none;
 }
 
+.mobile-logo {
+    display: none;
+}
+
+.mobile-bag {
+    display: none;
+}
+
 .top-navbar {
     height: 52px;
     width: auto;
@@ -119,6 +127,11 @@ a {
 
 @media only screen and (max-width: 768px) {
 
+    .hero-container {
+        height:400px;
+        background-position: 0px 48px;
+    }
+
     .navbar {
         justify-content: space-between;
         background-color: #142B3D;
@@ -140,6 +153,18 @@ a {
         border-top: 1px solid rgb(56, 55, 55);
     }
 
+    .mobile-logo {
+        display: block;
+        height: 40px;
+        padding-right: 35px;
+    }
+
+    .mobile-bag {
+        display: block;
+        height: 20px;
+        padding-right: 10px;
+    }
+
     .nav-link {
         color: #CCD6D6;
     }
@@ -147,6 +172,7 @@ a {
         display: flex;
         justify-content: center;
         border-bottom: 1px solid rgb(56, 55, 55);
+        border: 1px solid red;
     }
 
     .search-bar {
@@ -167,11 +193,6 @@ a {
         display: none;
     }
 
-    .nav-image-bag {
-        height: 40px;
-        padding-right: 5px;
-    }
-
     .nav-list  {
         width: 100%;
         flex-direction: column;
@@ -182,6 +203,7 @@ a {
         border-bottom: 1px solid rgb(56, 55, 55);
         width: 100%;
         height: auto;
+        border: 1px solid red;
     }
 
     .nav-item-container2 {
@@ -207,19 +229,18 @@ a {
     }
 
     .logo {
-        max-height: 30px;
+        display: none;
     }
 
     .nav-item {
         margin: 2.5rem 0;
     }
 
-
     .hamburger {
         display: block;
         cursor: pointer;
         width: 75px;
-        padding-right: 25px;
+        padding-right: 35px;
     }
 
     .hamburger.active .bar:nth-child(1) {
