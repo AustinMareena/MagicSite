@@ -17,6 +17,16 @@ a {
     text-decoration: none;
 }
 
+.top-navbar {
+    height: 52px;
+    width: auto;
+}
+
+.top-navbar-bio {
+    color: white;
+    opacity: 0.4;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
