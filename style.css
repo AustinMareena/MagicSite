@@ -144,22 +144,13 @@ a {
     .nav-list  {
         width: 100%;
         flex-direction: column;
-        text-align: left;
-        padding-left: 15px;
-    }
-
-    .nav-item-image {
-        display: flex;
-        height: 120px;
-        width: auto;
+        text-align: center;
     }
 
     .nav-item-container1 {
         border-bottom: 1px solid rgb(56, 55, 55);
         width: 100%;
-        height: 120px;
-        justify-items: space-between;
-        display: flex;
+        height: auto;
     }
 
     .nav-item-container2 {
