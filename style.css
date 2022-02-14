@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    background-color: #142B3D;
+    height: 48px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+.logo {
+    height: 40px;
+    padding-right: 2.5rem;
+}
+
+.nav-image-bag {
+    max-height: 20px;
+    width: auto;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.nav-image-search {
+    max-height: 40px;
+    width: auto;
+    padding-top: 3px;
+    padding-right: 2.5rem;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+        background-color: #142B3D;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #111B1B;
+        border-top: 1px solid rgb(56, 55, 55);
+    }
+
+    .nav-link {
+        color: #CCD6D6;
+    }
+    .mobile-search {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgb(56, 55, 55);
+    }
+
+    .search-bar {
+        background-color: rgb(56, 55, 55);
+        border-radius: 2px;
+        width: 90%;
+        height: 20px;
+        border: none;
+        margin: 10px 0px;
+    }
+
+    .search-bar::placeholder {
+        color: #CCD6D6;
+        padding-left: 3px;
+    }
+
+    .nav-image-search {
+        display: none;
+    }
+
+    .nav-image-bag {
+        height: 40px;
+        padding-right: 5px;
+    }
+
+    .nav-list  {
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .nav-item-container1 {
+        border-bottom: 1px solid rgb(56, 55, 55);
+        width: 100%;
+        height: 120px;
+        background-image: url(Images/playing-card-image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .nav-item-container2 {
+        border-bottom: 1px solid rgb(56, 55, 55);
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-item-container3 {
+        border-bottom: 1px solid rgb(56, 55, 55);
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-item-container4 {
+        border-bottom: 1px solid rgb(56, 55, 55);
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .logo {
+        max-height: 30px;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 75px;
+        padding-right: 25px;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(3.5px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        transform: translateY(-3.5px) rotate(-45deg);
+    }
+}
