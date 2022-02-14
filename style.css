@@ -90,6 +90,14 @@ a {
     padding-left: 2.5rem;
 }
 
+.hero-container {
+    height: 600px;
+    width: 100%;
+    background-image: url(Images/hero-image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 768px) {
 
     .navbar {
